@@ -1,5 +1,6 @@
 import { Link, StaticQuery } from "gatsby";
 import React from "react";
+import "typeface-scope-one";
 import Logo from "../components/Logo";
 import "./global.css";
 
