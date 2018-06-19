@@ -1,8 +1,8 @@
 import { Link } from "gatsby";
 import React from "react";
 import Hero, { HeroTitle } from "../components/Hero";
+import Layout from "../components/layout";
 import List from "../components/List";
-import Layout from "/components/layout";
 
 export default ({ data }) => (
   <Layout>
