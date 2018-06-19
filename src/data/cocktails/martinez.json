@@ -1,0 +1,23 @@
+{
+  "name": "Martinez",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass. Add a maraschino cherry.",
+  "ingredients": [
+    {
+      "measure": "1 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Dry Vermouth"
+    },
+    {
+      "measure": "1 dash",
+      "name": "Orange Bitters"
+    },
+    {
+      "measure": "0.25 tsp",
+      "name": "Triple Sec"
+    }
+  ]
+}

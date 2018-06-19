@@ -1,0 +1,19 @@
+{
+  "name": "Alexander's Sister Cocktail",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass. Garnish with fresh grated nutmeg on top.",
+  "ingredients": [
+    {
+      "measure": "1 oz",
+      "name": "Dry Gin"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Creme de Menthe (Green)"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Light Cream"
+    }
+  ]
+}

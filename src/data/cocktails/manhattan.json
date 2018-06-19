@@ -1,0 +1,19 @@
+{
+  "name": "Manhattan",
+  "category": "whisky",
+  "method": "Stir with ice and strain into chilled cocktail glass. Add a maraschino cherry.",
+  "ingredients": [
+    {
+      "name": "Bourbon",
+      "measure": "2 oz"
+    },
+    {
+      "name": "Sweet vermouth",
+      "measure": "1 oz"
+    },
+    {
+      "name": "Bitters",
+      "measure": "2 dashes"
+    }
+  ]
+}

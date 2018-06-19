@@ -1,0 +1,19 @@
+{
+  "name": "Alexander Cocktail No. 1",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass. Garnish with fresh grated nutmeg on top.",
+  "ingredients": [
+    {
+      "measure": "1 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Creme de Cacao (white)"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Light Cream"
+    }
+  ]
+}

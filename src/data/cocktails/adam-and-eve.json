@@ -1,0 +1,23 @@
+{
+  "name": "Adam and Eve",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass.",
+  "ingredients": [
+    {
+      "measure": "1 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Brandy"
+    },
+    {
+      "measure": "1 oz",
+      "name": "Forbidden Fruit Liqueur"
+    },
+    {
+      "measure": "1 dash",
+      "name": "Lemon Juice"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Alaska",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass.",
+  "ingredients": [
+    {
+      "measure": "1.5 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "0.75 oz",
+      "name": "Chartreuse (yellow)"
+    },
+    {
+      "measure": "2 dashes",
+      "name": "Orange Bitters"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Allen Cocktail",
+  "category": "gin",
+  "method": "Shake with ice and strain into chilled cocktail glass.",
+  "ingredients": [
+    {
+      "measure": "1.5 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "1.5 tsps",
+      "name": "Lemon Juice"
+    },
+    {
+      "measure": "0.75 oz",
+      "name": "Maraschino Liqueur"
+    }
+  ]
+}

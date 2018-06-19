@@ -1,0 +1,282 @@
+[data-reactroot] {
+  display: block;
+  margin: auto;
+  max-width: 60em; /* 1600px @ 1em = 16px*/
+  min-width: 20em; /* 320px @ 1em = 16px*/
+}
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  font-size: calc(0.85em + 0.5vw);
+  color: #333;
+  line-height: 1.5;
+  background: #fefefe;
+}
+* + * {
+  margin-top: 1rem;
+}
+body,
+br,
+dt,
+dd,
+th,
+td,
+option,
+[hidden] + *,
+:empty:not(img) + *,
+li + li,
+header * + * {
+  margin-top: 0;
+}
+p + p {
+  margin-top: 1rem;
+}
+a {
+  color: #ea4c88;
+  text-decoration: none;
+}
+a:hover {
+  color: #993399;
+  text-decoration: underline;
+}
+:focus {
+  outline: none;
+}
+:focus:not([tabindex="-1"]) {
+  outline: 4px solid #80b3ff;
+  outline-offset: 2px;
+}
+[href="#main"] {
+  position: absolute;
+  top: -2em;
+  right: 0.7rem;
+}
+[href="#main"]:focus {
+  top: 0.75rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 2.2rem;
+}
+.site-name {
+  font-size: 4rem;
+  margin-top: 3.5rem;
+  word-spacing: 100em;
+  line-height: 1;
+}
+h2 {
+  font-size: 1.5rem;
+}
+* + h2 {
+  margin-top: 2.1rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h3,
+h4 {
+  margin-bottom: -0.125rem;
+}
+nav h3 {
+  text-transform: none;
+}
+/*
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+main img {
+  margin: 1.5rem 0;
+}
+main img:last-child {
+  margin-bottom: 0;
+}
+main p img:last-child {
+  margin-bottom: 1.5rem;
+}
+img + p {
+  margin-top: 0;
+}
+* + figure {
+  margin-top: 2.1rem;
+}
+figure:not(:last-child) {
+  margin-bottom: 2.1rem;
+}
+figcaption {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 0.75rem;
+  padding: 0 1.5rem;
+}
+figure img {
+  margin-bottom: 0;
+}
+figure img:first-child {
+  margin-top: 0;
+}
+li a img {
+  height: 1em;
+  width: auto;
+}
+figure {
+  text-align: center;
+}
+*/
+main ul,
+main ol {
+  padding-left: 2.1rem;
+}
+nav ul {
+  list-style: none;
+}
+nav h3 {
+  font-size: 1.75rem;
+}
+[aria-label="site"] ul {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+}
+[aria-label="site"] li:first-child {
+  margin-right: auto;
+}
+[aria-label="site"] li:first-child a {
+  background-image: none;
+  border: 0;
+}
+[aria-label="site"] li:first-child a:hover .site-logo {
+  transform: rotate(-20deg) scale(1.05);
+}
+.site-logo {
+  margin-right: 0.15em;
+  transform: rotate(-15deg);
+}
+header {
+  position: relative;
+  margin-top: 0;
+  padding: 0.5rem 0;
+}
+main {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  width: 98%;
+}
+footer {
+  background: #a4a4a4;
+  background-image: -webkit-linear-gradient(135deg, #ababab 35%, #a4a4a4 35%);
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 2.8rem 0;
+  margin: 0;
+}
+footer * + * {
+  margin-top: 0;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+ul.inline {
+  list-style: none;
+  padding: 0;
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  [aria-label="site"] ul {
+    text-align: center;
+    padding-left: 0.7rem;
+  }
+  [aria-label="site"] li {
+    margin: 0.35rem;
+  }
+  [aria-label="site"] li:first-child {
+    display: block;
+  }
+  /*
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  */
+  nav h3 {
+    font-size: 1.5rem;
+  }
+  footer ul.inline {
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+  footer ul.inline li {
+    display: block;
+    margin: 0;
+    margin-top: 0.25rem;
+  }
+}
+/*
+  Card
+*/
+.card {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(56,60,67,.05),0 1px 3px 0 rgba(56,60,67,.15);
+}
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.card a {
+  display: block;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.card a:focus {
+  text-decoration: underline;
+}
+.card:focus-within {
+  box-shadow: 0 0 0 0.25rem;
+}
+.card:focus-within a:focus {
+  text-decoration: none;
+}
+.card:hover {
+  box-shadow: 0 0 0 1px rgba(56,60,67,.07),0 8px 14px 1px rgba(56,60,67,.15);
+  transition: box-shadow 250ms ease-out;
+}
+
+/*
+Color palletes
+
+424153 - text
+fdadc7 - 
+ea4c88 - link
+993399 - link hover
+https://colorhunt.co/palette/121460
+
+*/

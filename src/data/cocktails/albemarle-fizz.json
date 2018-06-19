@@ -1,0 +1,27 @@
+{
+  "name": "Albemarle Fizz",
+  "category": "gin",
+  "method": "Shake lemon juice, syrup and gin with ice and strain into ice-filled highball glass. Fill with club soda. Garnish with two sprigs of fresh mint.",
+  "ingredients": [
+    {
+      "measure": "2 oz",
+      "name": "Gin"
+    },
+    {
+      "measure": "1 tsp",
+      "name": "Lemon Juice"
+    },
+    {
+      "measure": "1 tsp",
+      "name": "Raspberry Syrup"
+    },
+    {
+      "measure": "1 tsp",
+      "name": "Superfine Sugar or Simple Syrup"
+    },
+    {
+      "measure": "",
+      "name": "Club Soda"
+    }
+  ]
+}
