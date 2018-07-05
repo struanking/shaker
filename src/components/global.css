@@ -1,4 +1,4 @@
-[data-reactroot] {
+body > div {
   display: block;
   margin: auto;
   max-width: 60em; /* 1600px @ 1em = 16px*/
@@ -56,12 +56,17 @@ a:hover {
   outline-offset: 2px;
 }
 [href="#main"] {
+  background-color: rgb(242, 242, 242, 0.95);
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
   position: absolute;
-  top: -2em;
-  right: 0.7rem;
+  text-align: center;
+  top: -3em;
+  z-index: 1;
 }
 [href="#main"]:focus {
-  top: 0.75rem;
+  top: calc(0.5rem - 4px); /* match position of header but take account of the focus offset */
 }
 h1,
 h2,
@@ -70,15 +75,16 @@ h4 {
   font-family: "Scope One", verdana,  sans-serif;
   font-weight: normal;
   line-height: 1.1;
+  text-align: center;
 }
 h1 {
   font-size: 3rem;
 }
 .site-name {
   font-size: 4rem;
+  line-height: 1;
   margin-top: 3.5rem;
   word-spacing: 100em;
-  line-height: 1;
 }
 h2 {
   font-size: 1.5rem;
@@ -177,7 +183,6 @@ header {
 main {
   margin: 0 auto;
   padding-bottom: 2rem;
-  width: 98%;
 }
 footer {
   background: #a4a4a4;
