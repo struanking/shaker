@@ -172,7 +172,7 @@ nav h3 {
   transform: rotate(-20deg) scale(1.05);
 }
 .site-logo {
-  margin-right: 0.15em;
+  margin-right: 0.3em;
   transform: rotate(-15deg);
 }
 header {
@@ -185,8 +185,8 @@ main {
   padding-bottom: 2rem;
 }
 footer {
-  background: #d2d2d2;
-  background-image: -webkit-linear-gradient(135deg, #e9e9e9 35%, #d2d2d2 35%);
+  background: #dadada;
+  background-image: -webkit-linear-gradient(135deg, #e9e9e9 35%, #dadada 35%);
   color: inherit;
   text-align: center;
   font-size: 0.85rem;

@@ -1,7 +1,9 @@
-import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import Hero, { HeroTitle } from "../components/Hero";
+import Layout from "../components/layout";
+
+// TODO Change "panel" to "ingredients", "method"?
 
 const Container = styled.div`
   margin: 1.5rem auto;
@@ -10,30 +12,39 @@ const Container = styled.div`
 `;
 
 const Panel = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
   & + & {
     margin-top: 3rem;
   }
 `;
 
 const PanelTitle = styled.h2`
-  border-bottom: solid 1px #f2f2f2;
+  border-bottom: solid 1px #dadada;
   font-weight: normal;
   margin-bottom: 0;
-  padding-bottom: 0.5rem;
+  padding: 0 1rem 0.25rem;
 `;
 
 const PanelBody = styled.div`
-  margin: 0;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0;
   padding: 0;
+  max-width: 20em;
+
+  > p {
+    text-align: center;
+  }
 `;
 
 const PanelList = styled.ul`
   list-style-type: square;
+  margin: auto;
 `;
 
 const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
-  <div>
+  <>
     <Hero>
       <HeroTitle>{name}</HeroTitle>
     </Hero>
@@ -45,7 +56,7 @@ const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
           <PanelList>
           {ingredientsJson.ingredients.map(({ ingredient, measure }) => (
             <li key={`${ingredientsJson.id}_${ingredient}`}>
-              {measure} <Link to={ingredient}>{ingredient}</Link>
+              {measure} {ingredient}
             </li>
           ))}
         </PanelList>
@@ -59,15 +70,15 @@ const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
         </PanelBody>
       </Panel>
     </Container>
-  </div>
+  </>
 );
 
 export default ({ data }) => (
-  <div>
-  {
-    data.allContentfulCocktail.edges.map(({ node }) => <Cocktail key={node.id} {...node} />)
-  }
-  </div>
+  data.allContentfulCocktail.edges.map(({ node }) => (
+    <Layout>
+      <Cocktail key={node.id} {...node} />
+    </Layout>
+  ))
 );  
 
 export const query = graphql`

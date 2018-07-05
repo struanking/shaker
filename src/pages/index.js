@@ -4,6 +4,7 @@ import styled from "styled-components";
 import FukolGridList from "../components/FukolGridList";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
+import Nav from "../components/nav";
 
 const Tagline = styled.span`
   color: #484848
@@ -11,13 +12,6 @@ const Tagline = styled.span`
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
-`;
-
-const Nav = styled.nav`
-  margin: auto;
-  max-width: 44em;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
 `;
 
 // const Tile = styled.div``;

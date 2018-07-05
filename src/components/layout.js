@@ -23,7 +23,13 @@ export default ({ children }) => (
             <ul className="inline">
               <li>
                 <Link to={`/`}>
-                  <Logo width="1em" height="1em" fill="darkgrey" aria-hidden="true" className="site-logo" />
+                  <Logo
+                    width="1em"
+                    height="1em"
+                    fill="darkgrey"
+                    aria-hidden="true"
+                    className="site-logo"
+                  />
                   Shaker <span className="visually-hidden">Home</span>
                 </Link>
               </li>
