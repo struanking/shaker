@@ -11,6 +11,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
     "gatsby": "next",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-styled-components": "next",
     "gatsby-plugin-typography": "next",
     "gatsby-source-contentful": "2.0.1-beta.8",
