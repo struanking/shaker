@@ -182,7 +182,7 @@ header {
 }
 main {
   margin: 0 auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 footer {
   background: #dadada;
@@ -256,6 +256,15 @@ ul.inline li {
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
+}
+
+/*
+ Small
+*/
+.small {
+  color: #767676;
+  font-size: 0.8em;
+  margin-left: 0.25em;
 }
 
 /*

@@ -3,6 +3,7 @@ import React from "react";
 import FukolGridList from "../components/FukolGridList";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
+import Nav from "../components/nav";
 
 export default ({ data }) => (
   <Layout>
@@ -11,7 +12,7 @@ export default ({ data }) => (
     </Hero>
 
 
-    <nav aria-label="categories">
+    <Nav aria-label="categories">
       <FukolGridList>
       {
         data.allContentfulCategory.edges.map(({ node }) => (
@@ -20,7 +21,7 @@ export default ({ data }) => (
               <h3>
                 <Link to={`/category/${node.slug}`}>
                   {node.name}
-                  <small>
+                  <small className="small">
                     ({node.cocktail === null ? '0' : node.cocktail.length})
                   </small>
                 </Link>
@@ -30,7 +31,7 @@ export default ({ data }) => (
         ))
       }
       </FukolGridList>
-    </nav>
+    </Nav>
   </Layout>
 );
 

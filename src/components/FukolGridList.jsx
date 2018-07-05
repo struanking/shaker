@@ -4,7 +4,9 @@ import styled from "styled-components";
 const FukolGridList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
+
+  padding-left: 0;
 
   // display: flex; /* 1 */
   // flex-wrap: wrap; /* 2 */

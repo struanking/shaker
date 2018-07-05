@@ -3,6 +3,7 @@ import React from "react";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
 import List from "../components/List";
+import Nav from "../components/nav";
 
 export default ({ data }) => (
   <Layout>
@@ -10,15 +11,17 @@ export default ({ data }) => (
       <HeroTitle>All Ingredients</HeroTitle>
     </Hero>
 
-    <List>
-      {
-        data.allContentfulIngredient.edges.map(({ node }) => (
-          <li key={node.id}>
-            <Link to={`/ingredients/${node.slug}`}>{node.name}</Link>
-          </li>
-        ))
-      }
-    </List>
+    <Nav aria-label="ingredients">
+      <List>
+        {
+          data.allContentfulIngredient.edges.map(({ node }) => (
+            <li key={node.id}>
+              <Link to={`/ingredients/${node.slug}`}>{node.name}</Link>
+            </li>
+          ))
+        }
+      </List>
+    </Nav>
   </Layout>
 );
 
