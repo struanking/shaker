@@ -9,6 +9,7 @@ export default ({ data }) => (
     <Hero>
       <HeroTitle>All Ingredients</HeroTitle>
     </Hero>
+
     <List>
       {
         data.allContentfulIngredient.edges.map(({ node }) => (

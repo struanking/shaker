@@ -22,7 +22,7 @@ export default ({ data, pageContext }) => {
         ? (
           <>
             <h2>{pluralizeCocktails(data.allContentfulCocktail.totalCount)}</h2>
-            <Nav>
+            <Nav aria-label="cocktails">
               <FukolGridList>
                 {
                   data.allContentfulCocktail.edges.map(({ node }) => (
