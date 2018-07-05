@@ -246,6 +246,18 @@ ul.inline li {
     margin-top: 0.25rem;
   }
 }
+
+/*
+  Tagline
+*/
+.tagline {
+  color: #484848;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
 /*
   Card
 */

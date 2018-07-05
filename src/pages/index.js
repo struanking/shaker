@@ -4,7 +4,6 @@ import FukolGridList from "../components/FukolGridList";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
-import Tagline from "../components/tagline";
 
 // const Tile = styled.div``;
 
@@ -26,7 +25,7 @@ export default ({ data }) => (
     <Hero>
       <HeroTitle>
         {data.site.siteMetadata.title}
-        <Tagline>A library of cocktail drinks</Tagline>
+        <span className="tagline">A library of cocktail drinks</span>
       </HeroTitle>
     </Hero>
     
