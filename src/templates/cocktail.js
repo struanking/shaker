@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import styled from "styled-components";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
@@ -45,6 +46,10 @@ const PanelList = styled.ul`
 
 const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
   <>
+    <Helmet>
+      <title>{name}</title>
+    </Helmet>
+
     <Hero>
       <HeroTitle>{name}</HeroTitle>
     </Hero>

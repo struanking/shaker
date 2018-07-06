@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import Helmet from "react-helmet";
 import FukolGridList from "../components/FukolGridList";
 import Hero from "../components/Hero";
 import Layout from "../components/layout";
@@ -14,6 +15,10 @@ export default ({ data, pageContext }) => {
   // common card template?
   return (
     <Layout>
+      <Helmet>
+        <title>Categories</title>
+      </Helmet>
+
       <Hero>
         <h1>{pageContext.category}</h1>
       </Hero>

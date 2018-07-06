@@ -1,5 +1,6 @@
 import { Link, StaticQuery } from "gatsby";
 import React from "react";
+import Helmet from "react-helmet";
 import "typeface-scope-one";
 import Logo from "../components/Logo";
 import "./global.css";
@@ -17,6 +18,10 @@ export default ({ children }) => (
     `}
     render={data => (
       <>
+        <Helmet defaultTitle={`Shaker`} titleTemplate={`%s | Shaker`}>
+          <html lang="en" />
+          <meta name="description" content="Library of cocktail drinks" />
+        </Helmet>
         <a href="#main">skip to content</a>
         <header role="banner">
           <nav aria-label="site">

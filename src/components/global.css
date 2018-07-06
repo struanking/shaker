@@ -41,11 +41,11 @@ p + p {
   margin-top: 1rem;
 }
 a {
-  color: #ea4c88;
+  color: #c90076;
   text-decoration: none;
 }
 a:hover {
-  color: #993399;
+  color: #1496bb;
   text-decoration: underline;
 }
 :focus {

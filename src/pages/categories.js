@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import Helmet from "react-helmet";
 import FukolGridList from "../components/FukolGridList";
 import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
@@ -7,6 +8,10 @@ import Nav from "../components/nav";
 
 export default ({ data }) => (
   <Layout>
+    <Helmet>
+      <title>All Categories</title>
+    </Helmet>
+
     <Hero>
       <HeroTitle>All Categories</HeroTitle>
     </Hero>

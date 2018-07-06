@@ -5,21 +5,6 @@ import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 
-// const Tile = styled.div``;
-
-// const TileLink = styled(Link)`
-//   border: solid 1px #e3e3e3;
-//   display: inline-block;
-//   c
-//   text-decoration: none;
-//   width: 100%;
-
-//   & :hover {
-//     background: #eee;
-//     box-shadow: 0 0 0 0 0.25rem;
-//   }
-// `;
-
 export default ({ data }) => (
   <Layout>
     <Hero>

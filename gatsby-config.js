@@ -19,7 +19,6 @@ module.exports = {
     },
     // `gatsby-transformer-remark`,
     // `gatsby-transformer-json`,
-    // `gatsby-plugin-styled-components`,
     // {
     //   resolve: `gatsby-plugin-typography`,
     //   options: {
