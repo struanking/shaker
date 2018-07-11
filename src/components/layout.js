@@ -21,8 +21,11 @@ export default ({ children }) => (
         <Helmet defaultTitle={`Shaker`} titleTemplate={`%s | Shaker`}>
           <html lang="en" />
           <meta name="description" content="Library of cocktail drinks" />
+          <meta name="keywords" content="cocktail gin rum vodka whisky whiskey" />
         </Helmet>
+        
         <a href="#main">skip to content</a>
+        
         <header role="banner">
           <nav aria-label="site">
             <ul className="inline">

@@ -1,9 +1,28 @@
 body > div {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   max-width: 60em; /* 1600px @ 1em = 16px*/
   min-width: 20em; /* 320px @ 1em = 16px*/
+  min-height: 100vh;
 }
+/*
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: minmax(60px, auto) 1fr 80px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    min-height: 100vh;
+    margin: 0;
+*/
+/*
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+main => flex: 1 0 auto;
+*/
 *,
 *::before,
 *::after {
@@ -181,8 +200,10 @@ header {
   padding: 0.5rem 0;
 }
 main {
+  flex: 1 0 auto;
   margin: 0 auto;
   padding-bottom: 1rem;
+  width: 100%;
 }
 footer {
   background: #dadada;
