@@ -6,6 +6,8 @@ import Layout from "../components/layout";
 import List from "../components/List";
 import Nav from "../components/nav";
 
+// TODO use nullables
+
 export default ({ data }) => (
   <Layout>
     <Helmet>
@@ -22,7 +24,9 @@ export default ({ data }) => (
           data.allContentfulCocktail.edges.map(({ node }) => (
             <li key={node.id}>
               <Link to={`/${node.slug}`}>{node.name}</Link>
-              <small className="small">({node.category.name})</small>
+              {node.category && 
+                <small className="small">({node.category.name})</small>
+              }
             </li>
           ))
         }
