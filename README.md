@@ -12,7 +12,7 @@ Test ground for trying out things
 - [ ] Site search
 - [ ] Functional Programming e.g. nullables
 
-#### Pages
+### Pages
 * `/` --> Home
 * `/ingredients` --> List of ingredients
 * `/ingredients/:slug`
