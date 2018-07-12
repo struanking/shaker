@@ -62,7 +62,7 @@ exports.createPages = ({ graphql, actions }) => {
               component: path.resolve(`./src/templates/cocktail.js`),
               context: {
                 // Data passed to context is available in page queries as GraphQL variables.
-                id: node.id,
+                id: node.id
               },
             })
           });
@@ -74,6 +74,7 @@ exports.createPages = ({ graphql, actions }) => {
               edges {
                 node {
                   id
+                  name
                   slug
                 }
               }
@@ -87,6 +88,7 @@ exports.createPages = ({ graphql, actions }) => {
               context: {
                 // Data passed to context is available in page queries as GraphQL variables.
                 id: node.id,
+                name: node.name
               },
             })
           });

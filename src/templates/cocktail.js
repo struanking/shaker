@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 
 const Container = styled.div`
   margin: 1.5rem auto;
-  max-width: 32em;
+  max-width: 36em;
   width: 100%;
 `;
 
@@ -48,6 +48,8 @@ const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
   <>
     <Helmet>
       <title>{name}</title>
+      <meta name="description" content={`${name} - ${category.name} cocktail`} />
+      <meta name="keywords" content={`${name} ${category.name}`} />
     </Helmet>
 
     <Hero>

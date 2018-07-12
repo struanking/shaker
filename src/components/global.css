@@ -34,7 +34,7 @@ main => flex: 1 0 auto;
   box-sizing: border-box;
 }
 html {
-  font-family: "Helvetica Neue", Geneva, sans-serif;
+  font-family: "Avenir Next", Geneva, sans-serif;
   font-size: calc(0.85em + 0.5vw);
   color: #333;
   line-height: 1.5;

@@ -8,17 +8,17 @@ import Nav from "../components/nav";
 
 // TODO nullable check, name variable?
 
-export default ({ data }) => (
+export default ({ data, pageContext }) => (
   <Layout>
     <Helmet>
-      <title>{data.allContentfulIngredient.edges[0].node.name}</title>
+      <title>{pageContext.name}</title>
     </Helmet>
 
     <Hero>
       <HeroTitle>Ingredient</HeroTitle>
     </Hero>
 
-    <h2>{data.allContentfulIngredient.edges[0].node.name} is used in:</h2>
+    <h2>{pageContext.name} is used in:</h2>
     
     <Nav aria-label="cocktails">
       <List>
