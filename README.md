@@ -7,6 +7,8 @@ Test ground for trying out things
 - [x] Contentful
 - [x] Netlify
 - [x] Cypress
+- [ ] Integrate Cypress with Netlify
+- [ ] Integrate aXe-core with Cypress  
 - [x] Styled Components
 - [ ] CSS Grid 
 - [ ] Typescript / Flow
