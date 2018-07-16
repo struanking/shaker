@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "shaker",
+  "description": "Cocktail library",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
