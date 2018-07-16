@@ -3,10 +3,14 @@
   "description": "Gatsby hello world starter",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
     "build": "gatsby build",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "deploy": "npm run build",
+    "develop": "gatsby develop",
+    "predeploy": "CI=1 npm i cypress; npm test",
     "serve": "gatsby serve",
-    "cypress:open": "cypress open"
+    "test": "start-test develop 8000 cy:run"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.5.1",
@@ -26,11 +30,13 @@
     "typeface-scope-one": "^0.0.54"
   },
   "devDependencies": {
+    "axe-core": "^3.0.3",
     "cypress": "^3.0.x",
     "eslint-config-standard": "^12.0.0-alpha.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.1.0"
+    "eslint-plugin-standard": "^3.1.0",
+    "start-server-and-test": "^1.5.0"
   }
 }
