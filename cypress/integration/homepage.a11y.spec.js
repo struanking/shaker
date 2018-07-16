@@ -29,16 +29,16 @@ describe('Inject axe-core and run it', () => {
   //     })
   // })
 
-  it('Runs axe-core', function() {
-    cy.visit('https://ecstatic-stallman-0b2183.netlify.com')
-      .window().then((win) => {
-        var window = win;
-        var axe = require('axe-core');
-        window.eval(axe.source);
-        return window.axe.run();
-      }).then((results) => {
-        console.log(results);
-        expect(results.violations).to.be.empty;
-      })
-  })
+  // it('Runs axe-core', function() {
+  //   cy.visit('https://ecstatic-stallman-0b2183.netlify.com')
+  //     .window().then((win) => {
+  //       var window = win;
+  //       var axe = require('axe-core');
+  //       window.eval(axe.source);
+  //       return window.axe.run();
+  //     }).then((results) => {
+  //       console.log(results);
+  //       expect(results.violations).to.be.empty;
+  //     })
+  // })
 })
