@@ -62,7 +62,7 @@ exports.createPages = ({ graphql, actions }) => {
               component: path.resolve(`./src/templates/cocktail.js`),
               context: {
                 // Data passed to context is available in page queries as GraphQL variables.
-                id: node.id
+                slug: node.slug
               },
             })
           });

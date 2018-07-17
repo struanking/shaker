@@ -45,7 +45,7 @@ const PanelList = styled.ul`
   margin: auto;
 `;
 
-const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
+const Cocktail = ({ category, ingredientsJson, method, name }) => (
   <>
     <Helmet>
       <title>{name}</title>
@@ -62,7 +62,7 @@ const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
         <PanelTitle>Ingredients</PanelTitle>
         <PanelBody>
           <PanelList>
-          {ingredientsJson && ingredientsJson.ingredients && ingredientsJson.ingredients.map(({ ingredient, measure }) => (
+          {ingredientsJson.ingredients.map(({ ingredient, measure }) => (
             <li key={`${ingredientsJson.id}_${ingredient}`}>
               {measure} {ingredient}
             </li>
@@ -90,8 +90,8 @@ export default ({ data }) => (
 );  
 
 export const query = graphql`
-  query CocktailQuery($id: String!) {
-    allContentfulCocktail(filter: { id: { eq: $id } }) {
+  query CocktailQuery($slug: String!) {
+    allContentfulCocktail(filter: { slug: { eq: $slug } }) {
       edges {
         node {
           id
