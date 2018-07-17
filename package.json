@@ -10,7 +10,7 @@
     "test": "start-test develop 8000 cy:run",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "predeploy": "CI=1 yarn add cypress; npm test",
+    "predeploy": "CI=1 yarn add cypress; yarn test",
     "deploy": "yarn build",
     "serve": "gatsby serve",
     "cy:open": "cypress open",
