@@ -5,6 +5,7 @@ import Hero, { HeroTitle } from "../components/Hero";
 import Layout from "../components/layout";
 
 // TODO Change "panel" to "ingredients", "method"?
+// TODO use fromNullable?
 
 const Container = styled.div`
   margin: 1.5rem auto;
@@ -61,7 +62,7 @@ const Cocktail = ({ category, id, ingredientsJson, method, name }) => (
         <PanelTitle>Ingredients</PanelTitle>
         <PanelBody>
           <PanelList>
-          {ingredientsJson.ingredients.map(({ ingredient, measure }) => (
+          {ingredientsJson && ingredientsJson.ingredients && ingredientsJson.ingredients.map(({ ingredient, measure }) => (
             <li key={`${ingredientsJson.id}_${ingredient}`}>
               {measure} {ingredient}
             </li>

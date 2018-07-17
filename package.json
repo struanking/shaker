@@ -7,7 +7,7 @@
     "url": "git+https://github.com/struanking/shaker.git"
   },
   "scripts": {
-    "test": "start-server-and-test develop 8000 cy:run",
+    "test": "start-test develop 8000 cy:run",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "predeploy": "CI=1 npm i cypress; npm test",
