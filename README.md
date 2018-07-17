@@ -1,6 +1,6 @@
 # Shaker
 
-https://shaker-gatsby.netlify.com
+https://shaker-gatsby-a95c.netlify.com
 
 Test ground for trying out things
 - [x] GatsbyJS v2 (including GraphQL)

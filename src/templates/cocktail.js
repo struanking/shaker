@@ -83,8 +83,8 @@ const Cocktail = ({ category, ingredientsJson, method, name }) => (
 
 export default ({ data }) => (
   data.allContentfulCocktail.edges.map(({ node }) => (
-    <Layout>
-      <Cocktail key={node.id} {...node} />
+    <Layout key={node.id}>
+      <Cocktail {...node} />
     </Layout>
   ))
 );  
