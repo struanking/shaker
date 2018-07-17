@@ -12,6 +12,6 @@ describe('Homepage', () => {
   })
 
   it('h1 text = "Shaker"', function() {
-    cy.get('h1').contains('Shaker')
+    cy.get('h1').contains('Shakerx')
   })
 })
